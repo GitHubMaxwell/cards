@@ -3,6 +3,8 @@ import { HashRouter, Route } from "react-router-dom";
 import Menu from "./Menu.js";
 import Footer from "./Footer.js";
 import Home from "./Home.js";
+import Deck from "./Deck.js";
+
 // maybe the code splitting in index.js messing up routes?
 
 export default class App extends Component {
@@ -18,6 +20,8 @@ export default class App extends Component {
         <Fragment>
           <Menu current={this.state.current} />
           <Route exact path="/" component={Home} />
+          <Route exact path="/deck" component={Deck} />
+
           <Footer />
         </Fragment>
       </HashRouter>

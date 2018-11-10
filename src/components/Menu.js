@@ -46,6 +46,13 @@ export default class Menu extends Component {
             >
               Home
             </Link>
+            <Link
+              to={"/deck"}
+              className={`menu-nav-items ${this.state.show ? `show` : ``}`}
+              onClick={this.menuItemClick}
+            >
+              Cards
+            </Link>
           </ul>
         </nav>
       </header>
